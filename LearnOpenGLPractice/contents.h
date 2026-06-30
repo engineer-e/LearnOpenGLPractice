@@ -5,8 +5,29 @@
 #include <string>
 #include <unordered_map>
 #include "1.1.h"
+#include "1.2.h"
+#include "2.1.h"
+#include "2.2.h"   
+#include "2.3.h"
 
 using namespace std;
+
+
+/*
+========================================
+FUNCTION REGISTRY
+========================================
+Add all exercise functions here
+*/
+
+unordered_map<string, void(*)()> exerciseMap =
+{
+    {"1.1", $1_1},
+    {"1.2", $1_2},
+    {"2.1", $2_1},
+    {"2.2", $2_2},
+    {"2.3", $2_3}
+};
 
 
 
@@ -163,20 +184,6 @@ string content8 =
 
 
 
-/*
-========================================
-FUNCTION REGISTRY
-========================================
-Add all exercise functions here
-*/
-
-unordered_map<string, void(*)()> exerciseMap =
-{
-    {"1.1", $1_1},
-    // {"1.2", $1_2},
-    // {"2.1", $2_1},
-    // {"2.2", $2_2},
-};
 
 /*
 ========================================
